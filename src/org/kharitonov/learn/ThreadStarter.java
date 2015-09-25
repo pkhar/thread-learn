@@ -2,6 +2,7 @@ package org.kharitonov.learn;
 
 import org.kharitonov.learn.runnables.FirstRunnable;
 import org.kharitonov.learn.thread.TestThread;
+import org.kharitonov.learn.thread.ThreadInterference;
 
 /**
  * Created by kharitonovp on 9/23/2015.
@@ -10,7 +11,7 @@ public class ThreadStarter {
     public static void main(String args[]) throws InterruptedException {
         //try to run primitive self-made threads
         ThreadStarter.startTestThreads();
-
+        ThreadInterference.example();
     }
 
     /**
