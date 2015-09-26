@@ -1,6 +1,8 @@
 package org.kharitonov.learn;
 
 import org.kharitonov.learn.runnables.FirstRunnable;
+import org.kharitonov.learn.thread.OrderedRunExample;
+import org.kharitonov.learn.thread.RandomRunExample;
 import org.kharitonov.learn.thread.TestThread;
 import org.kharitonov.learn.thread.ThreadInterference;
 
@@ -10,12 +12,15 @@ import org.kharitonov.learn.thread.ThreadInterference;
 public class ThreadStarter {
     public static void main(String args[]) throws InterruptedException {
         //try to run primitive self-made threads
-        ThreadStarter.startTestThreads();
-        ThreadInterference.example();
+        //ThreadStarter.startTestThreads();
+        //ThreadInterference.example();
+        // RandomRunExample.example();
+        OrderedRunExample.example();
     }
 
     /**
      * run primitive self-made threads
+     *
      * @throws InterruptedException
      */
     private static void startTestThreads() throws InterruptedException {
